@@ -20,12 +20,12 @@ For more details please refer to the following links:
 
 ### Backend
 
- - [README](https://github.com/rodvar/timemanagerfullstack/backend/README.md)
- - [Postman Collection to Test/Doc Backend](https://github.com/rodvar/timemanagerfullstack/backend/docs/TimeManagerAPI.postman_collection.json)
+ - [README](https://github.com/rodvar/timemanagerfullstack/timemanager/backend/README.md)
+ - [Postman Collection to Test/Doc Backend](https://github.com/rodvar/timemanagerfullstack/timemanager/backend/docs/TimeManagerAPI.postman_collection.json)
 
 ### Frontend
 
- - [README](https://github.com/rodvar/timemanagerfullstack/frontend/README.md)
+ - [README](https://github.com/rodvar/timemanagerfullstack/timemanager/frontend/README.md)
 
 
 ### Project Initial Requirements

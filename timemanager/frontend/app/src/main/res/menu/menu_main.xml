@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.rodvar.timemanager.feature.timelogs.MainActivity">
+
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="99"
+        android:title="@string/action_logout"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <group android:id="@+id/mainScreenActionsGroup">
+        <item
+            android:id="@+id/action_report"
+            android:orderInCategory="101"
+            android:title="@string/action_report"
+            app:showAsAction="never" />
+    </group>
+
+    <group android:id="@+id/adminActionsGroup">
+        <item
+            android:id="@+id/action_users"
+            android:orderInCategory="102"
+            android:title="@string/action_users"
+            app:showAsAction="never" />
+    </group>
+</menu>

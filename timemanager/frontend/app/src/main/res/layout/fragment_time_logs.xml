@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.rodvar.timemanager.feature.timelogs.TimeLogsViewModel" />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".feature.timelogs.TimeLogsFragment">
+
+        <TextView
+            android:id="@+id/noEntriesError"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/no_items_error"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:lines="2"
+            android:padding="@dimen/default_padding"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/filters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_border">
+
+            <TextView
+                android:id="@+id/filter_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/default_padding"
+                android:text="@string/filter_label" />
+
+            <RelativeLayout
+                android:id="@+id/date_from_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/filter_label"
+                android:background="@color/grey">
+
+                <TextView
+                    android:id="@+id/date_from_label"
+                    android:layout_width="@dimen/date_label_width"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/default_padding"
+                    android:text="@string/date_from_label" />
+
+                <TextView
+                    android:id="@+id/date_from"
+                    android:layout_width="@dimen/date_width"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/default_padding"
+                    android:layout_toEndOf="@+id/date_from_label" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/date_to_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/short_padding"
+                android:layout_toEndOf="@id/date_from_container"
+                android:background="@color/grey">
+
+                <TextView
+                    android:id="@+id/date_to_label"
+                    android:layout_width="@dimen/date_label_width"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/default_padding"
+                    android:text="@string/date_to_label" />
+
+                <TextView
+                    android:id="@+id/date_to"
+                    android:layout_width="@dimen/date_width"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/default_padding"
+                    android:layout_toEndOf="@id/date_to_label" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/filters"
+            android:layout_marginTop="@dimen/short_padding">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/timeEntriesList"
+                android:layout_marginStart="@dimen/short_padding"
+                android:layout_marginEnd="@dimen/short_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:elevation="10dp" />
+    </RelativeLayout>
+</layout>

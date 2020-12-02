@@ -1,0 +1,354 @@
+{
+	"info": {
+		"_postman_id": "da5d906f-b699-4c30-8627-de27067c506e",
+		"name": "TimeManagerAPI",
+		"description": "Enter description about your API here\n\nContact Support:\n Name: Your name",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/users/login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/user",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user"
+					],
+					"variable": [
+						{
+							"id": "a44592d2-7e08-4018-8e97-02cfe66690a1",
+							"key": "userId",
+							"value": "-35929319",
+							"type": "string",
+							"description": "(Required) ID of the user"
+						}
+					]
+				},
+				"description": "Sample endpoint: Returns details about a particular user"
+			},
+			"response": [
+				{
+					"name": "Sample response: Details about a user by ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/user",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Andrii\",\n    \"id\": 1,\n    \"role\": 0,\n    \"email\": \"andrii.sereda@toptal.com\",\n    \"password\": \"hashme\",\n    \"preferredHours\": 6.0,\n    \"lastLogin\": 234525423535,\n    \"sessionId\": \"sessionId\"\n}"
+				}
+			]
+		},
+		{
+			"name": "/users/logout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/user",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user"
+					],
+					"variable": [
+						{
+							"id": "a44592d2-7e08-4018-8e97-02cfe66690a1",
+							"key": "userId",
+							"value": "-35929319",
+							"type": "string",
+							"description": "(Required) ID of the user"
+						}
+					]
+				},
+				"description": "Sample endpoint: Returns details about a particular user"
+			},
+			"response": [
+				{
+					"name": "Sample response: Details about a user by ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/user",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Andrii\",\n    \"id\": 1,\n    \"role\": 0,\n    \"email\": \"andrii.sereda@toptal.com\",\n    \"password\": \"hashme\",\n    \"preferredHours\": 6.0,\n    \"lastLogin\": 234525423535,\n    \"sessionId\": \"sessionId\"\n}"
+				}
+			]
+		},
+		{
+			"name": "GET /users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/user",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user"
+					],
+					"variable": [
+						{
+							"id": "a44592d2-7e08-4018-8e97-02cfe66690a1",
+							"key": "userId",
+							"value": "-35929319",
+							"type": "string",
+							"description": "(Required) ID of the user"
+						}
+					]
+				},
+				"description": "Sample endpoint: Returns details about a particular user"
+			},
+			"response": [
+				{
+					"name": "Sample response: Details about a user by ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/user",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Andrii\",\n    \"id\": 1,\n    \"role\": 0,\n    \"email\": \"andrii.sereda@toptal.com\",\n    \"password\": \"hashme\",\n    \"preferredHours\": 6.0,\n    \"lastLogin\": 234525423535,\n    \"sessionId\": \"sessionId\"\n}"
+				}
+			]
+		},
+		{
+			"name": "PUT /users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/user",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user"
+					],
+					"variable": [
+						{
+							"id": "a44592d2-7e08-4018-8e97-02cfe66690a1",
+							"key": "userId",
+							"value": "-35929319",
+							"type": "string",
+							"description": "(Required) ID of the user"
+						}
+					]
+				},
+				"description": "Update user sent in the request body\nif successful returns the user that performs the update (needs to be admin)"
+			},
+			"response": [
+				{
+					"name": "Sample response: Details about a user by ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/user",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Andrii\",\n    \"id\": 1,\n    \"role\": 0,\n    \"email\": \"andrii.sereda@toptal.com\",\n    \"password\": \"hashme\",\n    \"preferredHours\": 6.0,\n    \"lastLogin\": 234525423535,\n    \"sessionId\": \"sessionId\"\n}"
+				}
+			]
+		},
+		{
+			"name": "POST /users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/user",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user"
+					],
+					"variable": [
+						{
+							"id": "a44592d2-7e08-4018-8e97-02cfe66690a1",
+							"key": "userId",
+							"value": "-35929319",
+							"type": "string",
+							"description": "(Required) ID of the user"
+						}
+					]
+				},
+				"description": "Sample endpoint: Returns details about a particular user"
+			},
+			"response": [
+				{
+					"name": "Sample response: Details about a user by ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/user",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Andrii\",\n    \"id\": 1,\n    \"role\": 0,\n    \"email\": \"andrii.sereda@toptal.com\",\n    \"password\": \"hashme\",\n    \"preferredHours\": 6.0,\n    \"lastLogin\": 234525423535,\n    \"sessionId\": \"sessionId\"\n}"
+				}
+			]
+		},
+		{
+			"name": "GET /times",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "get alll"
+			},
+			"response": []
+		},
+		{
+			"name": "POST /times",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "get alll"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /times",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "get alll"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE /times/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "get alll"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE /users/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "get alll"
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"id": "baseUrl",
+			"key": "baseUrl",
+			"value": "http://localhost:3000/api",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}

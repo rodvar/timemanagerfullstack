@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/default_padding">
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="@dimen/default_text_width"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/default_padding"
+        android:lines="2"
+        tools:text="Rodrigo Varela"
+        />
+
+    <TextView
+        android:id="@+id/userEmail"
+        android:layout_width="@dimen/default_text_width"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_padding"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/userName"
+        android:lines="2"
+        android:text="tuvieja@gmail.com"
+        />
+
+    <TextView
+        android:id="@+id/preferredHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/min_icon_size"
+        android:minHeight="@dimen/min_icon_size"
+        android:gravity="center_vertical|start"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/default_padding"
+        android:layout_toEndOf="@id/userEmail"
+        android:maxWidth="250dp"
+        tools:text="6.00"
+        />
+
+    <TextView
+        android:id="@+id/hours_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/default_padding"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/preferredHours"
+        android:text="@string/hours_lbl"
+        />
+
+    <TextView
+        android:id="@+id/role"
+        android:layout_width="@dimen/default_text_width"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_padding"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/hours_lbl"
+        android:layout_toStartOf="@id/deleteAction"
+        android:text="ADMIN"
+        />
+
+    <TextView
+        android:id="@+id/deleteAction"
+        android:layout_width="@dimen/min_icon_size"
+        android:layout_height="@dimen/min_icon_size"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/default_padding"
+        android:textStyle="bold"
+        android:text="@string/close_txt"/>
+</RelativeLayout>

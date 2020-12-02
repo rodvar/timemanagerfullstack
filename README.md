@@ -4,10 +4,7 @@
 
 ## Overview
 
- - Client [Andrii Sereda](mailto:andrii.sereda@toptal.com)
- - Software Engineer: [Rodrigo Varela](mailto:rodvar@gmail.com) 
- - Project schedule: [Monday Gantt](https://rodrigo-varela.monday.com/boards/848242270)
- - Kick-off Design: [Miro](https://miro.com/app/board/o9J_lf7nWik=/?moveToWidget=3074457351445708101&cot=12)
+ Time manager app DB, Backend (KTor) and Android App done in about 30h (in a 2 week timeframe) for last step of a hi-tech screening process.
 
 ## Implementation
 
@@ -23,12 +20,12 @@ For more details please refer to the following links:
 
 ### Backend
 
- - [README](https://git.toptal.com/screening/rodrigo-varela/blob/master/timemanager/backend/README.md)
- - [Postman Collection to Test/Doc Backend](https://git.toptal.com/screening/rodrigo-varela/blob/master/timemanager/backend/docs/TimeManagerAPI.postman_collection.json)
+ - [README](https://github.com/rodvar/timemanager/backend/README.md)
+ - [Postman Collection to Test/Doc Backend](https://github.com/rodvar/timemanager/backend/docs/TimeManagerAPI.postman_collection.json)
 
 ### Frontend
 
- - [README](https://git.toptal.com/screening/rodrigo-varela/blob/master/timemanager/frontend/README.md)
+ - [README](https://github.com/rodvar/timemanager/frontend/README.md)
 
 
 ### Project Initial Requirements
@@ -54,10 +51,6 @@ In any case, you should be able to explain how a REST API works and demonstrate 
 If it’s a web application, it must be a single-page application. All actions need to be done client-side using AJAX, refreshing the page is not acceptable. (If a mobile application, disregard this).
 Functional UI/UX design is needed. You are not required to create a unique design, however, do follow best practices to make the project as functional as possible.
 Bonus: unit and e2e tests.
-Please use this private repository to version-control your code:
-https://git.toptal.com/screening/rodrigo-varela
-Username: rodvar@gmail.com
-Password: WhnBc4DseqLuB
 
 Helpful take-home project guidelines:
 
@@ -70,8 +63,3 @@ Helpful take-home project guidelines:
 Please schedule an interview time that is most suitable for you. Bear in mind that you will need to show a finished project during this interview.
 
 Once you pick an appointment time, we’ll email you with additional meeting details and the contact details of another senior developer from our team who will assess your project and conduct your next interview. They are acting as your client for this project and are your point of contact for any questions you may have during the development of this project.
-
-Thanks,
-Andrés
-
-Andrés Felipe Pineda
